@@ -93,6 +93,7 @@
     "url": "https://github.com/arimariojesus/npm-publish-github-actions-poc.git"
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "restricted"
   }
 }
