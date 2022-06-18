@@ -1,6 +1,6 @@
 {
   "name": "npm-publish-github-actions-poc",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "license": "MIT",
   "author": "Arimário Jesus <arimario.jesus@hotmail.com> (https://github.com/arimariojesus)",
   "main": "dist/index.js",
@@ -28,7 +28,8 @@
     "clean:size": "rimraf .size-snapshot.json",
     "clean:cov": "rimraf coverage",
     "clean": "run-p clean:*",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "semantic-release": "semantic-release --branches main"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint --fix",
@@ -81,9 +82,17 @@
     "rollup-plugin-size-snapshot": "^0.12.0",
     "rollup-plugin-terser": "^7.0.2",
     "ts-jest": "^27.0.3",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "semantic-release": "^19.0.3"
   },
   "peerDependencies": {
     "react": ">= 16.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arimariojesus/npm-publish-github-actions-poc.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
