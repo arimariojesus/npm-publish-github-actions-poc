@@ -5,5 +5,5 @@ interface ComponentProps {
 }
 
 export const Component: React.FC<ComponentProps> = ({ children }) => {
-  return <div>{children || `I love you GitHub Action`}</div>;
+  return <div>{children || `GitHub Action with Semantic Release`}</div>;
 };
